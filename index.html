@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn for the icon pack -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Daily Mood Tracker</title>
+    
+</head>
+
+<body>
+    <div class="githublink">
+        <a href="https://github.com/AniketDey06/Daily-Mood-Tracker" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+    <h1>Daily Mood Tracker</h1>
+    <div class="mood-container">
+        <span class="mood" data-mood="😀">😀</span>
+        <span class="mood" data-mood="😐">😐</span>
+        <span class="mood" data-mood="😢">😢</span>
+        <span class="mood" data-mood="🤩">🤩</span>
+        <span class="mood" data-mood="😡">😡</span>
+    </div>
+    <p id="selected-mood">Select your mood for today</p>
+    <button onclick="clearHistory()">Clear History</button>
+
+    <div id="history">
+        <div class="card">
+            <div class="card__title">Past Moods</div>
+            <div class="card__data">
+                <div class="card__right" id="cardright">
+                    
+                </div>
+                <div class="card__left" id="cardleft">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
